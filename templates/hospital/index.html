@@ -1,0 +1,86 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+<!--
+written By : sumit kumar
+facebook : fb.com/sumit.luv
+-->
+
+
+{% block content %}
+
+
+<head>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url(https://imgs.search.brave.com/mQKJIaBmVldUqk8mXloUzIJZlebb7As5YSwH25JI8m8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDUu/ZGVwb3NpdHBob3Rv/cy5jb20vMTUxODc2/Ny82Njc0MS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzY2NzQxOTA3/NC1zdG9jay1waG90/by1nZW5lcmFsLXZp/ZXctcGF0aWVudC1y/b29tLWJlZHMuanBn);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h5,
+    h3 {
+      text-align: center;
+    }
+
+
+    .alert {
+      margin: 0px;
+    }
+
+
+
+    .glow {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+  </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  <br>
+  <h5 class="display-3 glow">You’ll Love the Way We Care for You</h5>
+  <li>cardiologist</li>
+  <li>nurolafist</li>
+  <li>any type od fecesage</li>
+  <p>all diiferent kinds od we, giun in</swam.>
+  <br><br><br><br><br>
+  <p>
+  <h3 style="color: white;"><center>Emergency ?</center></h3>
+
+  <p class="lead">
+    <div class="d-flex justify-content-center">
+    <a class="btn btn-primary btn-lg" href="/patientclick" role="button">Take Appointment</a>
+</div>
+  </p>
+  <br><br>
+</div>
+
+<br><br><br><br>
+
+{% include "hospital/admin_doctor_patient_card.html" %}
+<br><br><br>
+<!--
+developed By : sumit kumar
+facebook : fb.com/sumit.luv
+youtube : youtube.com/lazycoders
+-->
+
+{% endblock content %}

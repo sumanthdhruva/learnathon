@@ -1,0 +1,26 @@
+{% extends 'hospital/homebase.html' %}
+<!--
+developed By : sumit kumar
+facebook : fb.com/sumit.luv
+youtube : youtube.com/lazycoders
+-->
+
+{% block content %}
+
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom:0px;">
+  <h1 class="display-4" style="text-align:center;">Hello, Patient</h1>
+  <p class="lead"><center>Welcome to Hospital Management System.</center></p>
+  <hr class="my-4">
+  <p><center>You can access various features after Login/SignUp.</center></p>
+  <p class="lead">
+    <div class="d-flex justify-content-center">
+    <a class="btn btn-primary btn-lg" href="/patientsignup" role="button">Register Your Account</a>
+    <a class="btn btn-primary btn-lg" href="/patientlogin" role="button">Login</a>
+</div>
+  </p>
+</div>
+
+{% endblock content %}
